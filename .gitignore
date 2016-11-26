@@ -1,0 +1,13 @@
+Projects
+Desktop
+Documents
+Downloads
+Pictures
+Public
+workspace
+Projects
+*.hi
+*.o
+*~
+*.swp
+

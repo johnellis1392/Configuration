@@ -1,0 +1,16 @@
+
+https://github.com/defunkt/coffee-mode
+https://github.com/owainlewis/emacs-color-themes
+https://github.com/sellout/emacs-color-theme-solarized
+https://github.com/elixir-lang/emacs-elixir
+https://github.com/jaypei/emacs-neotree
+https://github.com/aki2o/emacs-tss
+https://github.com/ensime/ensime-emacs
+https://github.com/emacsmirror/evil
+https://github.com/jimhourihan/glsl-mode
+https://github.com/dominikh/go-mode.el
+https://github.com/brianc/jade-mode
+https://github.com/mooz/js2-mode
+https://github.com/dysinger/purescript-mode
+https://github.com/hvesalai/sbt-mode
+https://github.com/emacsmirror/undo-tree
