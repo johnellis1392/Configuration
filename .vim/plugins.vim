@@ -1,12 +1,8 @@
-
-" ##########
 " Setup Plugins
 set nocompatible
 filetype off
 
-
-" ##########
-" Setup Vundle
+" Vundle Setup -- {{{
 " Note: Use :PluginInstall to install plugins, 
 "       and :PluginUpdate to update existing plugins
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -20,11 +16,9 @@ Plugin 'Buffergator' " Note: Use \b to open buffergator window
 " Note: Look into 'syntastic' for syntax correction
 
 call vundle#end()
-" ##########
+" }}}
 
-
-" ##########
-" Setup NeoBundle
+" NeoBundle Setup -- {{{
 " Note: Use NeoBundleInstall to install plugins, and
 "       NeoBundleUpdate to update existing plugins
 "
@@ -38,12 +32,7 @@ NeoBundle 'syntastic'
 NeoBundle 'fugitive.vim'
 
 call neobundle#end()
-" ##########
-
+" }}}
 
 " Done setting up plugins: turn on filetype setting again
 filetype plugin indent on
-" ##########
-
-
-

@@ -1,0 +1,2 @@
+" Load mappings for ideavim
+source $HOME/.vim/index.vim

@@ -1,0 +1,2 @@
+" Load mappings for xvim
+source $HOME/.vim/index.vim
