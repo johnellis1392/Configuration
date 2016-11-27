@@ -14,3 +14,16 @@ nnoremap <silent> <C-l> <c-w><c-l>
 set foldmethod=syntax
 nnoremap <silent> <space> za
 
+" Add mappings to make it easier to make it easier to edit
+" (not my words)
+let mapleader="\\"
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" inoremap {<cr> {<cr><cr>}<esc>kA<tab>
+
+" Map jk to escape to normal mode
+inoremap jk <esc>
+inoremap <esc> <nop>
+inoremap <c-c> <nop>
+
