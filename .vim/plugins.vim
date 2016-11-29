@@ -30,6 +30,7 @@ call neobundle#begin()
 NeoBundle 'toyamarinyon/vim-swift'
 NeoBundle 'syntastic'
 NeoBundle 'fugitive.vim'
+NeoBundle 'elixir-lang/vim-elixir'
 
 call neobundle#end()
 " }}}
