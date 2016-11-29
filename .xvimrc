@@ -1,2 +1,12 @@
 " Load mappings for xvim
 source $HOME/.vim/index.vim
+
+nmap <c-h> <c-w>h
+nmap <c-j> <c-w>j
+nmap <c-k> <c-w>k
+nmap <c-l> <c-w>l
+
+cmap <c-j> <enter>
+
+imap <c-j> <enter>
+imap jk <esc>
