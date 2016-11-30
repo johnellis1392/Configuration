@@ -1,12 +1,19 @@
 " Load mappings for xvim
 source $HOME/.vim/index.vim
 
+" Window Motion -- {{{
+" Better window motion
 nmap <c-h> <c-w>h
 nmap <c-j> <c-w>j
 nmap <c-k> <c-w>k
 nmap <c-l> <c-w>l
+" }}}
 
+" Meta -- {{{
+" Re-enable enter in command line
 cmap <c-j> <enter>
 
+" Better enter and escape
 imap <c-j> <enter>
 imap jk <esc>
+" }}}

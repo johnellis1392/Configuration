@@ -28,6 +28,8 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 " }}}
 
+" Mode Maps -- {{{
+
 " Insert Mode -- {{{
 " Map jk to escape to normal mode
 inoremap jk <esc>
@@ -36,11 +38,17 @@ inoremap <c-c> <nop>
 inoremap <c-m> <nop>
 " }}}
 
+" Visual Mode -- {{{
+vnoremap <silent> <c-j> <esc>
+" }}}
+
 " O-Maps -- {{{
 
 " onoremap is used for operator-pending mappings.
 " operator pending mappings are maps for commands
 " that require associated motion commands, such as
 " d, y, and c.
+
+" }}}
 
 " }}}
