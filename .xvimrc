@@ -7,6 +7,12 @@ nmap <c-h> <c-w>h
 nmap <c-j> <c-w>j
 nmap <c-k> <c-w>k
 nmap <c-l> <c-w>l
+
+" Faster motion keys (without moving window)
+nmap <c-n> 10j
+nmap <c-p> 10k
+
+set scroll=15
 " }}}
 
 " Meta -- {{{

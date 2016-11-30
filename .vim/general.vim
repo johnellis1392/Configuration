@@ -36,6 +36,8 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+set scroll=15
+
 set wildmenu   " Better command-line completion
 set showcmd    " Show partial commands
 

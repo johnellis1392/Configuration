@@ -1,2 +1,22 @@
 " Load mappings for ideavim
 source $HOME/.vim/index.vim
+
+" Window Motion -- {{{
+" Better window motion
+nnoremap <silent> <c-h> <c-w>h
+nnoremap <silent> <c-j> <c-w>j
+nnoremap <silent> <c-k> <c-w>k
+nnoremap <silent> <c-l> <c-w>l
+
+" Faster motion keys (without moving window)
+nnoremap <silent> <c-n> 10j
+nnoremap <silent> <c-p> 10k
+
+set scroll=15
+" }}}
+
+" Meta -- {{{
+" Re-enable enter in command line
+inoremap <silent> <c-j> <enter>
+inoremap jk <esc>
+" }}}

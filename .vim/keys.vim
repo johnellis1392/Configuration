@@ -5,13 +5,21 @@ nmap <silent> <f3> :NERDTreeToggle<cr>
 nmap <silent> <f2> <c-w>w
 nmap <silent> <Enter> o<Esc>
 
-nnoremap <silent> <C-h> <c-w><c-h>
-nnoremap <silent> <C-j> <c-w><c-j>
-nnoremap <silent> <C-k> <c-w><c-k>
-nnoremap <silent> <C-l> <c-w><c-l>
+" Easier Change Windows
+nnoremap <silent> <c-h> <c-w>h
+nnoremap <silent> <c-j> <c-w>j
+nnoremap <silent> <c-k> <c-w>k
+nnoremap <silent> <c-l> <c-w>l
+
+" Faster motion keys (without moving window)
+nnoremap <silent> <c-n> 10j
+nnoremap <silent> <c-p> 10k
 
 " Easier close window operation
 nnoremap <silent> <c-c> :bd<cr>
+
+" Easier save document
+nnoremap <silent> <c-s> :w<cr>
 " }}}
 
 " Folding -- {{{
@@ -32,10 +40,15 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Insert Mode -- {{{
 " Map jk to escape to normal mode
-inoremap jk <esc>
-inoremap <esc> <nop>
-inoremap <c-c> <nop>
-inoremap <c-m> <nop>
+inoremap <silent> jk <esc>
+inoremap <silent> <esc> <nop>
+inoremap <silent> <c-c> <nop>
+inoremap <silent> <c-m> <nop>
+
+inoremap <silent> <tab> <c-p>
+
+" Save document
+inoremap <c-s> <esc>:w<cr>
 " }}}
 
 " Visual Mode -- {{{
@@ -48,6 +61,8 @@ vnoremap <silent> <c-j> <esc>
 " operator pending mappings are maps for commands
 " that require associated motion commands, such as
 " d, y, and c.
+
+onoremap <silent> <c-j> <esc>
 
 " }}}
 
