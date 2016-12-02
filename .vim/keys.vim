@@ -45,6 +45,7 @@ inoremap <silent> <esc> <nop>
 inoremap <silent> <c-c> <nop>
 inoremap <silent> <c-m> <nop>
 
+inoremap <silent> <c-g> <tab>
 inoremap <silent> <tab> <c-p>
 
 " Save document
