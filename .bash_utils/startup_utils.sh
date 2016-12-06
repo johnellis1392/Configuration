@@ -6,3 +6,8 @@ reset_dock () {
   Killall Dock
 }
 
+# Callback for custom startup functions
+on_startup () {
+  stty -ixon # Reset c-s and c-q for terminal emulator
+}
+

@@ -169,5 +169,4 @@ export PATH="/home/celestia/.dev-utils/android-studio/bin:$PATH"
 export ANDROID_HOME="/home/celestia/.dev-utils/android-sdk-linux/" 
 
 setxkbmap -layout us -option ctrl:nocaps
-stty -ixon
 

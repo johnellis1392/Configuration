@@ -1,6 +1,7 @@
 *
 !.bash_utils
 !.bash_utils/*
+!.bash_profile
 !.bashrc
 !.emacs.d
 !.emacs.d/*

@@ -18,8 +18,9 @@ nnoremap <silent> <c-p> 10k
 " Easier close window operation
 nnoremap <silent> <c-c> :bd<cr>
 
-" Easier save document
+" Easier Document Management
 nnoremap <silent> <c-s> :w<cr>
+nnoremap <silent> <c-q><c-q> :q!<cr>
 " }}}
 
 " Folding -- {{{
