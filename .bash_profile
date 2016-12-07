@@ -3,7 +3,6 @@ PATH=$PATH:/Users/johnellis/.local/bin
 
 # Source relevant local files
 for util in $(ls ~/.bash_utils); do
-  echo "Sourcing file: " $util;
   if [ -e $util ]; then
     source $util;
   fi
