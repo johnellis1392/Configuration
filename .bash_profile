@@ -1,12 +1,13 @@
 # Add additional resources to search path
 PATH=$PATH:/Users/johnellis/.local/bin
 
-# List of relevant local variables 
-source ~/.bash_utils/utils.sh; 
-source ~/.bash_utils/startup_utils.sh; 
-source ~/.bash_utils/git_utils.sh;
-source ~/.bash_utils/proj_utils.sh;
-source ~/.bash_utils/test_utils.sh; 
+# Source relevant local files
+for util in $(ls ~/.bash_utils); do
+  echo "Sourcing file: " $util;
+  if [ -e $util ]; then
+    source $util;
+  fi
+done
 
 # Note: you can use "."'s in function names in bash
 
