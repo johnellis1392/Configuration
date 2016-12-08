@@ -11,13 +11,7 @@ augroup js_util
   setlocal foldlevel=99
   " }}}
 
-  " Abbreviations -- {{{
-  " Easier function declarations
-  inoremap <buffer> fn{<space> function<space>()<space>{<space><space>}<left><left>
-  inoremap <buffer> fn{<cr> function<space>()<space>{<cr>}<esc>kA<cr>
-
-  " inoremap ( ()<esc>i
-  " inoremap " ""<esc>i
-  " }}}
+  " Load additional resources
+  source ~/.vim/custom/js/keys.vim
 augroup end
 " }}}
