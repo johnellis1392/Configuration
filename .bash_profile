@@ -3,10 +3,7 @@ PATH=$PATH:/Users/johnellis/.local/bin
 
 # Source relevant local files
 for util in $(ls ~/.bash_utils); do
-  echo "Sourcing file: " $util;
-  if [ -e $util ]; then
-    source $util;
-  fi
+  source ~/.bash_utils/$util;
 done
 
 # Note: you can use "."'s in function names in bash
@@ -31,6 +28,6 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # '\W' adds the name of the current directory
 export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 
-# Call remainder of startup functions
-source ~/.bash_utils/startup_utils.sh
+# Call remainder of startup functions; this function should
+# exist inside the ~/.bash_utils/startup_utils.sh file.
 on_startup;
