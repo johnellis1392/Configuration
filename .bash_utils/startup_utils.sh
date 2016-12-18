@@ -8,8 +8,11 @@ reset_dock () {
 
 # Callback for custom startup functions
 on_startup () {
-  stty -ixon # Reset c-s and c-q for terminal emulator
-  # Turn off mouse scroll acceleration on Macs
-  defaults write .GlobalPreferences com.apple.mouse.scaling 2 
+  stty -ixon; # Reset c-s and c-q for terminal emulator
+
+  if [ "$(uname)" == "Darwin" ]; then
+    # Turn off mouse scroll acceleration on Macs
+    defaults write .GlobalPreferences com.apple.mouse.scaling 2;
+  fi
 }
 
