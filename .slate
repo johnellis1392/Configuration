@@ -1,0 +1,51 @@
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+# default defaultLayout count:3
+
+# Window switching commands 
+bind left:ctrl;alt;cmd    throw left resize
+bind right:ctrl;alt;cmd   throw right resize
+bind up:alt;cmd           push up bar-resize:screenSizeY/2
+bind down:alt;cmd         push down bar-resize:screenSizeY/2
+bind left:alt;cmd         push left bar-resize:screenSizeX/2
+bind right:alt;cmd        push right bar-resize:screenSizeX/2
+
+# Fullscreen an application
+bind up:ctrl;alt;cmd push up bar-resize:screenSizeY
+
+# Focusing commands
+bind left:ctrl      focus left 
+bind right:ctrl     focus right
+bind up:ctrl        focus up
+bind down:ctrl      focus down
+bind tab:alt;cmd    focus behind
+
+bind h:alt;shift    focus left
+bind j:alt;shift    focus down
+bind k:alt;shift    focus up
+bind l:alt;shift    focus right
+
+# Bind slate application switcher
+bind tab:cmd        switch
+bind tab:cmd;shift  switch
+
+# Focusing Keys
+# bind 1:alt focus 'Google Chrome'
+# bind 2:alt focus 'IntelliJ IDEA'
+# bind 3:alt focus 'Xcode'
+# bind 4:alt focus 'Terminal'
+# bind 5:alt focus 'Evernote'
+# bind 6:alt focus ''
+# bind 8:alt focus 'Soundnode'
+bind 7:alt;shift    focus 'Spotify'
+bind 8:alt;shift    focus 'Vivaldi'
+bind 9:alt;shift    focus 'Slack'
+
+# Additional bindings for conveniently accessing terminal
+bind -:cmd          focus 'Terminal'
+bind =:cmd          focus 'Evernote'
+bind [:cmd          focus 'Google Chrome'
+bind ]:cmd          focus 'IntelliJ IDEA'
+bind backslash:cmd  focus 'Xcode'

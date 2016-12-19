@@ -8,6 +8,7 @@
 !.gitignore
 !.ideavimrc
 !.keynavrc
+!.slate
 !.tmux.conf
 !.tmux
 !.vim
