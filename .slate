@@ -44,6 +44,9 @@ bind 9:cmd;shift    focus 'Slack'
 # Additional bindings for conveniently accessing terminal
 bind -:cmd;shift          focus 'Terminal'
 bind =:cmd;shift          focus 'Evernote'
-bind [:cmd;shift          focus 'Google Chrome'
-bind ]:cmd;shift          focus 'IntelliJ IDEA'
-bind backslash:cmd;shift  focus 'Xcode'
+
+bind -:cmd;alt            focus 'Terminal'
+bind =:cmd;alt            focus 'Evernote'
+bind [:cmd;alt            focus 'Google Chrome'
+bind ]:cmd;alt            focus 'IntelliJ IDEA'
+bind backslash:cmd;alt    focus 'Xcode'
