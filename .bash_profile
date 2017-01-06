@@ -7,6 +7,7 @@ for util in $(ls ~/.bash_utils); do
 done
 
 # Note: you can use "."'s in function names in bash
+source $HOME/.cargo/env
 
 # ##########
 # Git Bash utils
