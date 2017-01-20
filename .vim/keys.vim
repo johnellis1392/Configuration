@@ -1,9 +1,9 @@
 " Custom Shortcuts
 
 " Window -- {{{
-nmap <silent> <f3> :NERDTreeToggle<cr>
-nmap <silent> <f2> <c-w>w
-nmap <silent> <Enter> o<Esc>
+nnoremap <silent> <f3> :NERDTreeToggle<cr>
+nnoremap <silent> <f2> <c-w>w
+nnoremap <silent> <Enter> o<Esc>
 
 " Easier Change Windows
 nnoremap <silent> <c-h> <c-w>h
@@ -21,6 +21,13 @@ nnoremap <silent> <c-c> :bd<cr>
 " Easier Document Management
 nnoremap <silent> <c-s> :w<cr>
 nnoremap <silent> <c-q><c-q> :q!<cr>
+" }}}
+
+" Tabs -- {{{
+nnoremap <silent> <c-t> :tabnew<cr>
+
+" nnoremap <silent> <c-,> gT
+" nnoremap <silent> <c-.> gt
 " }}}
 
 " Folding -- {{{
