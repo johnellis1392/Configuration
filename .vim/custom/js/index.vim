@@ -13,5 +13,8 @@ augroup js_util
 
   " Load additional resources
   source ~/.vim/custom/js/keys.vim
+
+  " Set jsx notation
+  let g:jsx_pragma_required = 0
 augroup end
 " }}}

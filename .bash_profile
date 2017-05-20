@@ -1,3 +1,6 @@
+# Source .bashrc
+source ~/.bashrc
+
 # Add additional resources to search path
 PATH=$PATH:/Users/johnellis/.local/bin
 
@@ -32,3 +35,4 @@ export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 # Call remainder of startup functions; this function should
 # exist inside the ~/.bash_utils/startup_utils.sh file.
 on_startup;
+

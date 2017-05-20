@@ -137,10 +137,15 @@ export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 alias subl="/usr/bin/emacs"
 
 # Environment variables for android development
-export PATH=${PATH}:/home/celestia/.dev-utils/android-sdk-linux/tools/:/home/celestia/.dev-utils/android-sdk-linux/build-tools/:/home/celestia/.dev-utils/android-sdk-linux/platform-tools/
+# export PATH=${PATH}:/home/celestia/.dev-utils/android-sdk-linux/tools/:/home/celestia/.dev-utils/android-sdk-linux/build-tools/:/home/celestia/.dev-utils/android-sdk-linux/platform-tools/
 
-export ANDROID_HOME=~/.dev-utils/android-sdk-linux/
+
+# Set android utils
+export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME
+export PATH=${PATH}:$ANDROID_HOME/tools
+export PATH=${PATH}:$ANDROID_HOME/platform-tools
+
 export PATH=${PATH}:/home/celestia/.dev-utils/node_modules/bin/
 export PATH=${PATH}:/home/celestia/.stack/programs/x86_64-linux/ghc-7.10.2/bin
 export PYLEARN2_VIEWER_COMMAND="gwenview"
@@ -165,8 +170,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # Add Android Studio to Path 
 export PATH="/home/celestia/.dev-utils/android-studio/bin:$PATH" 
-
-export ANDROID_HOME="/home/celestia/.dev-utils/android-sdk-linux/" 
 
 setxkbmap -layout us -option ctrl:nocaps
 

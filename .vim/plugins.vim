@@ -12,6 +12,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'SWIFT-ATE-Syntax'
 Plugin 'Buffergator' " Note: Use \b to open buffergator window
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " Note: Look into 'syntastic' for syntax correction
 
