@@ -171,5 +171,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Add Android Studio to Path 
 export PATH="/home/celestia/.dev-utils/android-studio/bin:$PATH" 
 
+# Add go path
+export GOPATH="$HOME/Projects/go"
+export PATH="$PATH:$GOPATH"
+
 setxkbmap -layout us -option ctrl:nocaps
 
