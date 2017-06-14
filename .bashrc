@@ -175,5 +175,5 @@ export PATH="/home/celestia/.dev-utils/android-studio/bin:$PATH"
 export GOPATH="$HOME/Projects/go"
 export PATH="$PATH:$GOPATH"
 
-setxkbmap -layout us -option ctrl:nocaps
+# setxkbmap -layout us -option ctrl:nocaps
 

@@ -20,3 +20,6 @@
 !.zshrc
 !.zsh
 !LICENSE
+!.atom/
+!.atom/*
+
