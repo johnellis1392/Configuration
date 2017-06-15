@@ -35,7 +35,10 @@
   'cmd-o': 'fuzzy-finder:toggle-file-finder'
   'cmd-e': 'tree-view:toggle-focus'
   'cmd-shift-e': 'tree-view:toggle'
-  'cmd-t': 'platformio-ide-terminal:toggle'
+
+'atom-workspace':
+  'cmd-shift-t': 'platformio-ide-terminal:toggle'
+  'cmd-t': 'platformio-ide-terminal:focus'
 
 'atom-text-editor[mini]':
   'j k': 'core:cancel'
@@ -50,8 +53,14 @@
 'atom-text-editor.vim-mode-plus.insert-mode':
   'j k': 'vim-mode-plus:activate-normal-mode'
 
-'.terminal-view':
-  'cmd-t': 'platformio-ide-terminal:toggle-focus'
+'atom-text-editor.vim-mode-plus.normal-mode':
+  'ctrl-h': 'window:focus-pane-on-left'
+  'ctrl-l': 'window:focus-pane-on-right'
+  'ctrl-j': 'window:focus-pane-below'
+  'ctrl-k': 'window:focus-pane-above'
+
+# '.terminal-view':
+#   'cmd-t': 'platformio-ide-terminal:toggle-focus'
 
 '.tree-view':
   'cmd-e': 'tree-view:toggle-focus'
