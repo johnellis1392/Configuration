@@ -36,3 +36,9 @@ export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 # exist inside the ~/.bash_utils/startup_utils.sh file.
 on_startup;
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/johnellis/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/johnellis/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/johnellis/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/johnellis/Downloads/google-cloud-sdk/completion.bash.inc'; fi
