@@ -18,3 +18,5 @@
       runInsertedText: false
       selectToCopy: false
   "tree-view": {}
+  "vim-mode-plus-ex-mode":
+    notifiedUseExMode: true
