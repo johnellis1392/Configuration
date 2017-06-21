@@ -1,8 +1,12 @@
 "*":
   core:
     telemetryConsent: "limited"
+  editor:
+    tabLength: 4
   "exception-reporting":
     userId: "fcfc173e-a63a-4748-9980-b7be814d4740"
+  "go-plus":
+    panel: {}
   "linter-ui-default":
     showPanel: true
   "platformio-ide-terminal":
