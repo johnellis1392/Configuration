@@ -1,0 +1,12 @@
+# File containing custom snippets
+
+# '.source.js':
+#     'console.log':
+#         'prefix': 'log'
+#         'body': 'console.log(${1:"crash"});$2'
+
+
+# '.source.rust':
+#     'something':
+#         'prefix': 'something'
+#         'body': 'fn something(${1:"arg1"}) { println!("${2:"string"}"); }'

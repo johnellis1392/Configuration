@@ -1,5 +1,8 @@
 "*":
   core:
+    disabledPackages: [
+      "platformio-ide-terminal"
+    ]
     telemetryConsent: "limited"
   editor:
     tabLength: 4
