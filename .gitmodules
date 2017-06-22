@@ -1,3 +1,6 @@
 [submodule "workspace"]
 	path = workspace
 	url = https://gitlab.com/john.ellis1392/workspace
+[submodule ".vim"]
+	path = .vim
+	url = https://gitlab.com/john.ellis1392/VimConfiguration
