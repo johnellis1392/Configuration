@@ -151,15 +151,6 @@ export PATH=${PATH}:/home/celestia/.stack/programs/x86_64-linux/ghc-7.10.2/bin
 export PYLEARN2_VIEWER_COMMAND="gwenview"
 export PYLEARN2_DATA_PATH=/data/
 
-# JOGL Dependencies
-export JOGL=~/.dev-utils/jogl/
-export CLASSPATH=${CLASSPATH}:~/.dev-utils/jogl/jogamp-all-platforms/jar/gluegen-rt.jar:~/.dev-utils/jogl/jogamp-all-platforms/jar/jogl-all.jar:~/.dev-utils/jogl/jogl-demos/jar/jogl-demos.jar:~/.dev-utils/jogl/jogl-demos/jar/jogl-demos-data.jar:~/.dev-utils/jogl/jogl-demos/jar/jogl-demos-util.jar:~/.dev-utils/graphicslib3D/graphicslib3D.jar 
-
-export GOPATH=~/.dev-utils/go-utils/
-export GOBIN=~/.dev-utils/go-utils/bin/
-export PATH=$PATH:$GOBIN
-export PATH=${PATH}:/home/celestia/.local/bin
-
 
 
 export NVM_DIR="/home/celestia/.nvm"
@@ -168,12 +159,13 @@ export NVM_DIR="/home/celestia/.nvm"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# Add Android Studio to Path 
-export PATH="/home/celestia/.dev-utils/android-studio/bin:$PATH" 
+# Add Android Studio to Path
+export PATH="/home/celestia/.dev-utils/android-studio/bin:$PATH"
 
 # Add go path
-export GOPATH="$HOME/Projects/go"
-export PATH="$PATH:$GOPATH"
+export GOPATH=$HOME/workspace/go
+export GOBIN=$GOPATH/bin/
+export PATH=$PATH:$GOBIN
+export PATH=${PATH}:/home/celestia/.local/bin
 
 # setxkbmap -layout us -option ctrl:nocaps
-

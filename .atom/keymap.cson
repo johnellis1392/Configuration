@@ -30,11 +30,46 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+# Global keybindings
+'body':
+  'cmd-o': 'fuzzy-finder:toggle-file-finder'
+  'alt-o': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-[': 'core:cancel'
+  'alt-w': 'core:close'
+  'alt-shift-w': 'pane:reopen-closed-item'
+  'alt-[': 'pane:show-previous-item'
+  'alt-]': 'pane:show-next-item'
+  'alt-{': 'pane:move-item-left'
+  'alt-}': 'pane:move-item-right'
+
+  # Window management commands
+  'alt-h': 'window:focus-pane-on-left'
+  'alt-l': 'window:focus-pane-on-right'
+  'alt-j': 'window:focus-pane-below'
+  'alt-k': 'window:focus-pane-above'
+
+  'alt-1': 'pane:show-item-1'
+  'alt-2': 'pane:show-item-2'
+  'alt-3': 'pane:show-item-3'
+  'alt-4': 'pane:show-item-4'
+  'alt-5': 'pane:show-item-5'
+  'alt-6': 'pane:show-item-6'
+  'alt-7': 'pane:show-item-7'
+  'alt-8': 'pane:show-item-8'
+  'alt-9': 'pane:show-item-9'
+
+
+
 'atom-text-editor':
   'ctrl-j': 'editor:newline'
   'cmd-o': 'fuzzy-finder:toggle-file-finder'
+  'alt-o': 'fuzzy-finder:toggle-file-finder'
   'cmd-e': 'tree-view:toggle-focus'
   'cmd-shift-e': 'tree-view:toggle'
+
+  # Remove conflicting commands
+  'alt-h': 'window:focus-pane-on-left'
 
 'atom-workspace':
   'cmd-shift-t': 'platformio-ide-terminal:toggle'
@@ -47,23 +82,43 @@
 'atom-text-editor.vim-mode-plus:not(.normal-mode)':
   'ctrl-[': 'vim-mode-plus:reset-normal-mode'
 
+'atom-text-editor.vim-mode-plus.normal-mode':
+  'ctrl-p': 'line-jumper:move-up'
+  'ctrl-n': 'line-jumper:move-down'
+
+  'ctrl-h': 'window:focus-pane-on-left'
+  'ctrl-l': 'window:focus-pane-on-right'
+  'ctrl-j': 'window:focus-pane-below'
+  'ctrl-k': 'window:focus-pane-above'
+
 'atom-text-editor.vim-mode-plus-input-char-waiting':
   'ctrl-[': 'core:cancel'
 
 'atom-text-editor.vim-mode-plus.insert-mode':
   'j k': 'vim-mode-plus:activate-normal-mode'
 
-'atom-text-editor.vim-mode-plus.normal-mode':
-  'ctrl-h': 'window:focus-pane-on-left'
-  'ctrl-l': 'window:focus-pane-on-right'
-  'ctrl-j': 'window:focus-pane-below'
-  'ctrl-k': 'window:focus-pane-above'
-
 # '.terminal-view':
 #   'cmd-t': 'platformio-ide-terminal:toggle-focus'
 
+# Relevant commands for navigating tree-view and destroying files
 '.tree-view':
   'cmd-e': 'tree-view:toggle-focus'
   'cmd-shift-e': 'tree-view:toggle'
   'o': 'tree-view:open-selected-entry'
   'ctrl-[': 'tree-view:toggle-focus'
+  'H': 'tree-view:recursive-collapse-directory'
+
+  # Optimized, non-conflicting bindings
+  'L': 'tree-view:recursive-expand-directory'
+  'x': 'tree-view:remove'
+
+  # Alternate bindings for pane management
+  'alt-1': 'tree-view:open-selected-entry-in-pane-1'
+  'alt-2': 'tree-view:open-selected-entry-in-pane-2'
+  'alt-3': 'tree-view:open-selected-entry-in-pane-3'
+  'alt-4': 'tree-view:open-selected-entry-in-pane-4'
+  'alt-5': 'tree-view:open-selected-entry-in-pane-5'
+  'alt-6': 'tree-view:open-selected-entry-in-pane-6'
+  'alt-7': 'tree-view:open-selected-entry-in-pane-7'
+  'alt-8': 'tree-view:open-selected-entry-in-pane-8'
+  'alt-9': 'tree-view:open-selected-entry-in-pane-9'

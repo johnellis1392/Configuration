@@ -1,9 +1,14 @@
 "*":
   core:
     telemetryConsent: "limited"
+  editor:
+    tabLength: 4
   "exception-reporting":
     userId: "fcfc173e-a63a-4748-9980-b7be814d4740"
-  "linter-ui-default": {}
+  "go-plus":
+    panel: {}
+  "linter-ui-default":
+    showPanel: true
   "platformio-ide-terminal":
     core:
       mapTerminalsTo: "Folder"
@@ -12,3 +17,6 @@
       cursorBlink: false
       runInsertedText: false
       selectToCopy: false
+  "tree-view": {}
+  "vim-mode-plus-ex-mode":
+    notifiedUseExMode: true
