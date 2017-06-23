@@ -4,6 +4,8 @@
       "platformio-ide-terminal"
     ]
     telemetryConsent: "limited"
+  "easy-motion-redux":
+    replaceCharacters: "ASDFGHKLERTYUICVBNM"
   editor:
     tabLength: 4
   "exception-reporting":
