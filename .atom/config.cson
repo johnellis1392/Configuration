@@ -5,7 +5,7 @@
     ]
     telemetryConsent: "limited"
   "easy-motion-redux":
-    replaceCharacters: "ASDFGHKLERTYUICVBNM"
+    replaceCharacters: "ABCDEFGHIKLMNOPQRSTUVWXYZ"
   editor:
     tabLength: 4
   "exception-reporting":
