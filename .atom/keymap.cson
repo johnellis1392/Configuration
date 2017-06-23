@@ -67,6 +67,7 @@
   'alt-o': 'fuzzy-finder:toggle-file-finder'
   'cmd-e': 'tree-view:toggle-focus'
   'cmd-shift-e': 'tree-view:toggle'
+  'alt-e': 'easy-motion-redux:words'
 
   # Remove conflicting commands
   'alt-h': 'window:focus-pane-on-left'
