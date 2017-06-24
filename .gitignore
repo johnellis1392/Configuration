@@ -5,6 +5,7 @@
 !.emacs.d
 !.emacs.d/*
 !.gitignore
+!.gvimrc
 !.ideavimrc
 !.keynavrc
 !.slate
@@ -22,3 +23,4 @@
 !.atom/
 !.atom/*
 !workspace
+
