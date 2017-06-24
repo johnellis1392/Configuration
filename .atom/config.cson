@@ -13,6 +13,7 @@
   "go-plus":
     panel: {}
   "linter-ui-default":
+    panelHeight: 69
     showPanel: true
   "platformio-ide-terminal":
     core:
