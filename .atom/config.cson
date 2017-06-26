@@ -1,4 +1,28 @@
 "*":
+  "atom-beautify":
+    bash:
+      beautify_on_save: true
+    c:
+      beautify_on_save: true
+    erlang:
+      beautify_on_save: true
+    general:
+      _analyticsUserId: "ff75f22d-0f11-44e0-bfa4-f099e50c4c45"
+    go:
+      beautify_on_save: true
+    haskell:
+      beautify_on_save: true
+    js:
+      beautify_on_save: true
+      end_with_comma: true
+      jslint_happy: true
+      keep_array_indentation: true
+      keep_function_indentation: true
+      space_after_anon_function: true
+    rust:
+      beautify_on_save: true
+    yaml:
+      disabled: true
   core:
     disabledPackages: [
       "platformio-ide-terminal"
@@ -13,7 +37,6 @@
   "go-plus":
     panel: {}
   "linter-ui-default":
-    panelHeight: 69
     showPanel: true
   "platformio-ide-terminal":
     core:
@@ -26,3 +49,10 @@
   "tree-view": {}
   "vim-mode-plus-ex-mode":
     notifiedUseExMode: true
+".js.source":
+  editor:
+    showInvisibles: false
+".source.yaml":
+  editor:
+    showInvisibles: false
+    tabLength: 2
