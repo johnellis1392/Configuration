@@ -68,6 +68,7 @@
   'cmd-e': 'tree-view:toggle-focus'
   'cmd-shift-e': 'tree-view:toggle'
   'alt-e': 'easy-motion-redux:words'
+  'alt-b': 'git-blame:toggle'
 
   # Remove conflicting commands
   'alt-h': 'window:focus-pane-on-left'
