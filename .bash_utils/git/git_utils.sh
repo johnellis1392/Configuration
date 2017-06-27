@@ -51,10 +51,16 @@ git_absorb_repo() {
 
     # Add submodule
     git submodule add $remote_url || \
-        echo "An error occurred while attempting to clone $remote_url" && \
-        mv $temp_dirname $dirname && \
-        return 1;
+    echo "An error occurred while attempting to clone $remote_url" && \
+    mv $temp_dirname $dirname && \
+    return 1;
 
     # Delete temp directory
     rm -rf $temp_dirname;
+}
+
+
+# Get the author of the first commit in the repository
+git_orig_author() {
+    git show $(git rev-list master | tail -n 1) | grep -e "Author:" | awk '{print $2}';
 }
