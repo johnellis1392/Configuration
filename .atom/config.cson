@@ -14,16 +14,19 @@
       beautify_on_save: true
     js:
       beautify_on_save: true
+      brace_style: "collapse-preserve-inline"
       end_with_comma: true
       end_with_newline: true
       jslint_happy: true
       keep_array_indentation: true
       keep_function_indentation: true
       space_after_anon_function: true
+    json: {}
     rust:
       beautify_on_save: true
     yaml:
       disabled: true
+  "autocomplete-xml": {}
   core:
     disabledPackages: [
       "platformio-ide-terminal"
@@ -64,6 +67,9 @@
 ".js.source":
   editor:
     showInvisibles: false
+".scala.source":
+  editor:
+    tabLength: 2
 ".source.yaml":
   editor:
     showInvisibles: false

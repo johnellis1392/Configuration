@@ -61,6 +61,9 @@
   'alt-8': 'pane:show-item-8'
   'alt-9': 'pane:show-item-9'
 
+  # Unset commands
+  'f2': 'unset!'
+
 
 
 'atom-text-editor':
