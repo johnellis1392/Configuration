@@ -15,6 +15,7 @@
     js:
       beautify_on_save: true
       end_with_comma: true
+      end_with_newline: true
       jslint_happy: true
       keep_array_indentation: true
       keep_function_indentation: true
