@@ -39,7 +39,7 @@
   "exception-reporting":
     userId: "fcfc173e-a63a-4748-9980-b7be814d4740"
   "git-blame":
-    columnWidth: 238
+    columnWidth: 316
   "git-plus":
     experimental:
       diffBranches: true
