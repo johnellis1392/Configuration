@@ -34,6 +34,7 @@ export DOCKER_PATH=$WORKSPACE/docker;
 export HASKELL_PATH=$WORKSPACE/Haskell-Dev;
 export PROLOG_PATH=$WORKSPACE/prolog;
 export NOTEBOOK_PATH=$WORKSPACE/Notebooks;
+export SCALA_PATH=$WORKSPACE/scala;
 
 # Paths for workspace dependencies
 export WORKSPACE_UTILS=$WORKSPACE/utils;
