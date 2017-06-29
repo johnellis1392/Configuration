@@ -35,8 +35,14 @@ export HASKELL_PATH=$WORKSPACE/Haskell-Dev;
 export PROLOG_PATH=$WORKSPACE/prolog;
 export NOTEBOOK_PATH=$WORKSPACE/Notebooks;
 
+# Paths for workspace dependencies
+export WORKSPACE_UTILS=$WORKSPACE/utils;
+export CBT_PATH=$WORKSPACE_UTILS/cbt;
+export PATH=$PATH:$CBT_PATH;
+
 # Add go path
 export GOPATH=$WORKSPACE/go;
 export GOBIN=$GOPATH/bin/;
 export PATH=$PATH:$GOBIN;
 export PATH=${PATH}:/home/celestia/.local/bin;
+
