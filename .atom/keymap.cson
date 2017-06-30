@@ -51,6 +51,11 @@
   'alt-j': 'window:focus-pane-below'
   'alt-k': 'window:focus-pane-above'
 
+  'alt-shift-s alt-shift-h': 'pane:split-left-and-copy-active-item'
+  'alt-shift-s alt-shift-j': 'pane:split-down-and-copy-active-item'
+  'alt-shift-s alt-shift-k': 'pane:split-up-and-copy-active-item'
+  'alt-shift-s alt-shift-l': 'pane:split-right-and-copy-active-item'
+
   'alt-1': 'pane:show-item-1'
   'alt-2': 'pane:show-item-2'
   'alt-3': 'pane:show-item-3'

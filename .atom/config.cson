@@ -61,7 +61,9 @@
   "split-diff":
     ignoreWhitespace: true
     syncHorizontalScroll: true
-  "tree-view": {}
+  "tree-view":
+    alwaysOpenExisting: true
+    autoReveal: true
   "vim-mode-plus-ex-mode":
     notifiedUseExMode: true
 ".js.source":
