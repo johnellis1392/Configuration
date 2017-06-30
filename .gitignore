@@ -3,7 +3,6 @@
 !.bash_profile
 !.bashrc
 !.emacs.d
-!.emacs.d/*
 !.gitignore
 !.gvimrc
 !.ideavimrc
@@ -12,15 +11,12 @@
 !.tmux.conf
 !.tmux
 !.vim
-!.vim/custom/vim
 !.vimrc
 !.xmonad
-!.xmonad/*
 !.xvimrc
 !.zshrc
 !.zsh
 !LICENSE
-!.atom/
-!.atom/*
+!.atom
 !workspace
 
