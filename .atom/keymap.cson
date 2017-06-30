@@ -68,6 +68,7 @@
 
   # Unset commands
   'f2': 'unset!'
+  'ctrl-f2': 'unset!'
 
 
 
