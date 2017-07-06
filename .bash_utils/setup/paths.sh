@@ -26,6 +26,9 @@ export PATH="/usr/local/heroku/bin:$PATH";
 # Add Android Studio to Path
 export PATH="/home/celestia/.dev-utils/android-studio/bin:$PATH";
 
+# Add Python utils
+export PATH="$HOME/Library/Python/3.6/bin:$PATH";
+
 # User-level workspace paths
 export WORKSPACE=$HOME/workspace;
 export RUST_PATH=$WORKSPACE/rust;
