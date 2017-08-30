@@ -6,6 +6,7 @@
 !.gitignore
 !.gvimrc
 !.ideavimrc
+!.jsbeautifyrc
 !.keynavrc
 !.slate
 !.tmux.conf
