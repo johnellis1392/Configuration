@@ -1,4 +1,5 @@
 {
+
   "html": {
     "brace_style": "collapse",
     "indent_char": " ",
@@ -18,13 +19,28 @@
   },
 
   "js": {
-    "indent_size": "4",
+    "brace_style": "collapse-preserve-inline",
+    "break_chained_methods": false,
+    "end_of_line": "System Default",
+    "end_with_comma": true,
+    "end_with_newline": true,
+    "eval_code": false,
+
     "indent_char": " ",
     "indent_level": 0,
+    "indent_size": "4",
     "indent_with_tabs": false,
-    "preserve_newlines": true,
+
+    "jslint_happy": true,
+    "keep_array_indentation": false,
+    "keep_function_indentation": false,
     "max_preserve_newlines": 5,
-    "jslint_happy": true
+    "preserve_newlines": true,
+    "space_after_anon_function": true,
+    "space_before_conditionals": true,
+    "space_in_paren": false,
+    "unescape_strings": false,
+    "wrap_line_length": 0
   },
 
   "sql": {
