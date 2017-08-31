@@ -4,7 +4,7 @@
     "brace_style": "collapse",
     "indent_char": " ",
     "indent_scripts": "normal",
-    "indent_size": 6,
+    "indent_size": 2,
     "indent_with_tabs": false,
     "max_preserve_newlines": 3,
     "preserve_newlines": true,
@@ -28,7 +28,7 @@
 
     "indent_char": " ",
     "indent_level": 0,
-    "indent_size": "4",
+    "indent_size": "2",
     "indent_with_tabs": false,
 
     "jslint_happy": true,
