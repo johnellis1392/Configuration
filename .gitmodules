@@ -7,3 +7,6 @@
 [submodule ".atom"]
 	path = .atom
 	url = https://gitlab.com/john.ellis1392/AtomConfiguration.git
+[submodule ".bash_utils/extensions/osx-terminal-themes"]
+	path = .bash_utils/extensions/osx-terminal-themes
+	url = https://github.com/lysyi3m/osx-terminal-themes.git

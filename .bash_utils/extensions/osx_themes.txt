@@ -1,0 +1,15 @@
+This is a list of all the themes I like for the
+osx bash theme package:
+
+* AdventureTime
+* Afterglow
+* AtalierSulphurpool
+* Blazer
+* Chalkboard
+* Ciapre
+* Darkside
+* DotGov
+* Dracula
+* FishTank
+* FrontEndDelight
+
