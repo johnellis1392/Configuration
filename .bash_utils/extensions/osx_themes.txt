@@ -3,7 +3,7 @@ osx bash theme package:
 
 * AdventureTime
 * Afterglow
-* AtalierSulphurpool
+* AtelierSulphurpool
 * Blazer
 * Chalkboard
 * Ciapre
@@ -12,4 +12,3 @@ osx bash theme package:
 * Dracula
 * FishTank
 * FrontEndDelight
-

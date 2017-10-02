@@ -40,3 +40,9 @@ export GOPATH=$WORKSPACE/go;
 export GOBIN=$GOPATH/bin/;
 export PATH=$PATH:$GOBIN;
 export PATH=${PATH}:/home/celestia/.local/bin;
+
+# Add rvm path
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
