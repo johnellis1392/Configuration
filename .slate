@@ -42,7 +42,8 @@ bind 8:cmd;shift    focus 'Vivaldi'
 bind 9:cmd;shift    focus 'Slack'
 
 # Additional bindings for conveniently accessing terminal
-bind -:cmd;shift          focus 'Terminal'
+# bind -:cmd;shift          focus 'Terminal'
+bind -:cmd;shift          focus 'iTerm2'
 bind =:cmd;shift          focus 'Evernote'
 
 bind -:cmd;alt            focus 'Atom'
