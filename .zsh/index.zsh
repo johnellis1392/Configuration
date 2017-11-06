@@ -60,3 +60,9 @@ build_prompt() {
   # prompt_hg
   prompt_end
 }
+
+
+# Reset stty on startup: resets flow-control settings
+# for zsh to allow ctrl-s & ctrl-q
+stty stop undef
+stty start undef
