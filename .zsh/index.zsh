@@ -3,7 +3,7 @@
 # Index file for loading ZSH utils
 source ${HOME}/.zsh/misc/index.zsh
 source ${HOME}/.zsh/commands/index.zsh
-export ZSH=/Users/johnellis/.zsh/oh-my-zsh
+export ZSH=${HOME}/.zsh/oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 
