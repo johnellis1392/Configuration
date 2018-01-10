@@ -37,17 +37,20 @@ bind tab:cmd;shift  switch
 # bind 5:alt focus 'Evernote'
 # bind 6:alt focus ''
 # bind 8:alt focus 'Soundnode'
+# bind 8:cmd;shift    focus 'Vivaldi'
+# bind 9:cmd;shift    focus 'Slack'
+
 bind 7:cmd;shift    focus 'Spotify'
-bind 8:cmd;shift    focus 'Vivaldi'
-bind 9:cmd;shift    focus 'Slack'
+bind 8:cmd;shift    focus 'Microsoft Outlook'
+bind 9:cmd;shift    focus 'Microsoft Word'
 
 # Additional bindings for conveniently accessing terminal
-# bind -:cmd;shift          focus 'Terminal'
-bind -:cmd;shift          focus 'iTerm2'
+bind -:cmd;shift          focus 'Terminal'
+# bind -:cmd;shift          focus 'iTerm2'
 bind =:cmd;shift          focus 'Evernote'
 
 bind -:cmd;alt            focus 'Atom'
-# bind =:cmd;alt            focus 'Evernote'
+bind =:cmd;alt            focus 'Amazon Chime'
 bind [:cmd;alt            focus 'Google Chrome'
 bind ]:cmd;alt            focus 'IntelliJ IDEA'
 bind backslash:cmd;alt    focus 'Xcode'

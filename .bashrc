@@ -9,3 +9,6 @@ case $- in
 esac
 
 source $HOME/.bash_utils/index.sh
+if [[ -e $HOME/.profile ]];
+  then source $HOME/.profile;
+fi
