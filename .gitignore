@@ -13,6 +13,7 @@
 
 # Dot-Files
 !.gitignore
+!.gitignore_global
 !.gvimrc
 !.ideavimrc
 !.jsbeautifyrc
