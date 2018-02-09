@@ -4,7 +4,9 @@
 # in various languages
 
 PATH=$PATH:/Users/johnellis/.local/bin;
-source $HOME/.cargo/env;
+if [[ -e $HOME/.cargo.env ]]; then
+  source $HOME/.cargo/env;
+fi
 alias subl="/usr/bin/emacs";
 
 export ANDROID_HOME=${HOME}/Library/Android/sdk;
