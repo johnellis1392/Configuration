@@ -1,2 +1,20 @@
+# ################################# #
+# Global Git Excludes Configuration #
+# ################################# #
+#
+# To Load, run:
+# bash> git config --global core.excludesfile ~/.gitignore_global
+
+# General Build Files
+/build
+/bin
+
+# Generated Java Utilities
+/bin/
+/eclipse-bin/*
+.project
+.classpath
+*.class
+
 # Ignore Intellij Configurations
-*.iml
+/*.iml
