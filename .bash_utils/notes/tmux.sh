@@ -114,4 +114,3 @@ tmux send-keys \
 # * <prefix>{ - Move current pane left
 # * <prefix>} - Move current pane right
 # * <prefix>z - Toggle pane zoom
-
