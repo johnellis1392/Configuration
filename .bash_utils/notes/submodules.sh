@@ -16,3 +16,9 @@
 # - 2) Remove the submodule information from .gitmodules
 # - 3) Remove the submodule from the .git/config:
 #	   `git submodule deinit -- <submodule_name>`
+#      or: `rm -rf .git/modules/<submodule_name>`
+#
+#
+# A Stack Overflow post explaining this process
+# (in a bit more detail than above) can be found here:
+# https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
