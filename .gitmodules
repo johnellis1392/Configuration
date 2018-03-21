@@ -19,3 +19,6 @@
 [submodule ".idea"]
 	path = .idea
 	url = https://gitlab.com/john.ellis1392/IdeaConfiguration.git
+[submodule ".bash_utils/extensions/dracula"]
+	path = .bash_utils/extensions/dracula
+	url = https://github.com/dracula/iterm.git

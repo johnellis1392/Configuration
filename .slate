@@ -51,7 +51,7 @@ bind -:cmd;shift          focus 'iTerm2'
 bind =:cmd;shift          focus 'Quip'
 
 bind -:cmd;alt            focus 'Atom'
-# bind =:cmd;alt            focus 'Quip'
+bind =:cmd;alt            focus 'Live'
 bind [:cmd;alt            focus 'Google Chrome'
 bind ]:cmd;alt            focus 'IntelliJ IDEA'
 bind backslash:cmd;alt    focus 'Xcode'
