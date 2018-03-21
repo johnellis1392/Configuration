@@ -1,23 +1,30 @@
 /*
+
+# Directories
+!.atom
 !.bash_utils
 !.bash_profile
 !.bashrc
 !.emacs.d
+!.idea
+!.tmux
+!.vim
+!.xmonad
+!.zsh
+
+# Dot-Files
 !.gitignore
+!.gitignore_global
 !.gvimrc
 !.ideavimrc
 !.jsbeautifyrc
 !.keynavrc
 !.slate
 !.tmux.conf
-!.tmux
-!.vim
 !.vimrc
-!.xmonad
 !.xvimrc
 !.zshrc
-!.zsh
-!LICENSE
-!.atom
-!workspace
 
+# Other Files
+!LICENSE
+!workspace

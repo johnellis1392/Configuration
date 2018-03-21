@@ -16,3 +16,6 @@
 [submodule ".zsh/powerline-fonts"]
 	path = .zsh/powerline-fonts
 	url = https://github.com/powerline/fonts
+[submodule ".idea"]
+	path = .idea
+	url = https://gitlab.com/john.ellis1392/IdeaConfiguration.git

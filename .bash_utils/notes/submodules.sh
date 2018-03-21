@@ -16,4 +16,3 @@
 # - 2) Remove the submodule information from .gitmodules
 # - 3) Remove the submodule from the .git/config:
 #	   `git submodule deinit -- <submodule_name>`
-

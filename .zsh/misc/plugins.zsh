@@ -6,4 +6,43 @@
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git) # bundler osx rake ruby)
+plugins=(
+  aws
+  brew
+  docker
+  docker-compose
+  git
+  golang
+  osx
+  tmux
+)
+
+
+# List of relevant plugins you may want:
+# * aws
+# * brew
+# * bundle
+# * cabal
+# * docker
+# * docker-compose
+# * docker-machine
+# * git
+# * golang
+# * node
+# * npm
+# * nvm
+# * osx (includes Spotify command)
+# * postgres
+# * pylint
+# * python
+# * rake
+# * react-native
+# * ruby
+# * rust
+# * sbt
+# * scala
+# * tig
+# * torrent
+# * tmux
+# * ubuntu
+# * vagrant

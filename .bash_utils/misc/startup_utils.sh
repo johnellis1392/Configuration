@@ -8,6 +8,6 @@ reset_dock () {
 
 stty -ixon; # Reset c-s and c-q for terminal emulator
 if [ "$(uname)" == "Darwin" ]; then
-# Turn off mouse scroll acceleration on Macs
-defaults write .GlobalPreferences com.apple.mouse.scaling 2;
+  # Turn off mouse scroll acceleration on Macs
+  defaults write .GlobalPreferences com.apple.mouse.scaling 2;
 fi
