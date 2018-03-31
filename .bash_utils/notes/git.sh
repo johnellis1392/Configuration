@@ -38,3 +38,24 @@ git config --global alias.ls \
 git clean -Xf     # -f => --force, -X => Only remove files ignored by git
 git clean -Xf -n  # -n => Dry Run
 git clean -Xf -i  # -i => Interactive Delete
+
+
+# Get the diff for a merge-commit:
+# Every merge commit will have an extra "Merge:" label in it, along
+# with the usual "Author:" and "Date:" labels; this code gets the
+# full diff for a specified merge commit.
+commit_id=$(git log --oneline --skip=1 --max-count=1 --format="%h")
+git log "${commit_id}" \
+  | grep -e '^Merge: ' \
+  | cut -d' ' -f2- \
+  | sed -E 's/(.*) (.*)/\2..\1/' \
+  | xargs -I __commits \
+      git diff __commits
+
+# Get the full diff for the LAST merge commit:
+git log \
+  | grep -e '^Merge: ' \
+  | cut -d' ' -f2- \
+  | sed -E 's/(.*) (.*)/\2..\1/' \
+  | xargs -I __commits \
+      git diff __commits
