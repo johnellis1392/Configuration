@@ -2,8 +2,9 @@
 source ~/.zsh/index.zsh
 
 # Variables & Things
-export GOPATH=/Volumes/data/go
-export PATH=$PATH:$GOPATH/bin
-if [[ -e $HOME/.profile ]];
-  then source $HOME/.profile;
+export GOPATH=$HOME/workspace/go
+export PATH=$GOPATH/bin:$PATH
+
+if [[ -e $HOME/.profile ]]; then
+  source $HOME/.profile
 fi
