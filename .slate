@@ -21,8 +21,8 @@ bind up:ctrl;alt;cmd push up bar-resize:screenSizeY
 bind tab:alt;cmd    focus behind
 
 bind h:cmd;shift    focus left
-bind j:cmd;shift    focus down
-bind k:cmd;shift    focus up
+# bind j:cmd;shift    focus down
+# bind k:cmd;shift    focus up
 bind l:cmd;shift    focus right
 
 # Bind slate application switcher
@@ -42,13 +42,15 @@ bind tab:cmd;shift  switch
 
 bind 7:cmd;shift    focus 'Spotify'
 bind 8:cmd;shift    focus 'Microsoft Outlook'
-bind 9:cmd;shift    focus 'Amazon Chime'
+bind 9:cmd;shift    focus 'Slack'
+bind 0:cmd;shift    focus 'zoom.us'
+
+bind 9:cmd;alt      focus 'Discord'
 
 # bind -:cmd;shift          focus 'Terminal'
 bind -:cmd;shift          focus 'iTerm2'
 # bind =:cmd;shift          focus 'Evernote'
-# bind =:cmd;shift          focus 'Notes'
-bind =:cmd;shift          focus 'Quip'
+bind =:cmd;shift          focus 'Notes'
 
 bind -:cmd;alt            focus 'Atom'
 bind =:cmd;alt            focus 'Live'

@@ -5,13 +5,13 @@ custom_dir=$tmux_home/custom;
 # Only tmux version 2.1 and up has certain features
 # enabled, so it is necessary to have different 
 # configurations depending on the version.
-load_tmux_version () {
-  tmux_version="$(tmux -V | awk '{print $2}')";
-  if [[ $(echo "$tmux_version >= 2.1" | bc) -eq 1 ]]; then
-    tmux source-file $custom_dir/tmux.2-1.conf;
-  else 
-    tmux source-file $custom_dir/tmux.2-0.conf;
-  fi
+load_tmux_version() {
+  # tmux_version="$(tmux -V | awk '{print $2}')";
+  # if [[ $(echo $(tmux -V) " >= 2.1" | bc) -eq 1 ]]; then
+  tmux source-file $custom_dir/tmux.2-1.conf;
+  # else 
+  #  tmux source-file $custom_dir/tmux.2-0.conf;
+  #fi
   return 0;
 }
 
