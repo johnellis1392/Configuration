@@ -5,11 +5,11 @@ source ~/.zsh/index.zsh
 export GOPATH=$HOME/workspace/go
 export PATH=$GOPATH/bin:$PATH
 export PATH=/usr/local/anaconda3/bin:$PATH
+export EDITOR='vim'
 
 if [[ -e $HOME/.profile ]]; then
   source $HOME/.profile
 fi
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -26,3 +26,6 @@ fi
 # unset __conda_setup
 # <<< conda initialize <<<
 
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

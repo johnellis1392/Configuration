@@ -4,6 +4,9 @@ source $HOME/.vim/general.vim
 source $HOME/.vim/colors.vim
 source $HOME/.vim/keys.vim
 
+set visualbell
+set noerrorbells
+
 
 " Window Motion -- {{{
 " Better window motion
