@@ -572,7 +572,7 @@
                         ]
                     },
                     {
-                        "description": "Open Calendar with Cmd+F6",
+                        "description": "Open Mail with Cmd+F6",
                         "manipulators": [
                             {
                                 "from": {
@@ -585,7 +585,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a 'Calendar'"
+                                        "shell_command": "open -a 'Mail'"
                                     }
                                 ],
                                 "type": "basic"
@@ -698,7 +698,7 @@
                         ]
                     },
                     {
-                        "description": "Open Finder with Cmd+Shift+F1",
+                        "description": "Open Firefox with Cmd+Shift+F1",
                         "manipulators": [
                             {
                                 "from": {
@@ -712,7 +712,51 @@
                                 },
                                 "to": [
                                     {
+                                        "shell_command": "open -a 'Firefox'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Open Finder with Cmd+Shift+F2",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f2",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
                                         "shell_command": "open -a 'Finder'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Open Keychain Access with Cmd+Shift+F3",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f3",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Keychain Access'"
                                     }
                                 ],
                                 "type": "basic"
@@ -764,7 +808,7 @@
                         ]
                     },
                     {
-                        "description": "Open Mail with Cmd+Shift+F6",
+                        "description": "Open Calendar with Cmd+Shift+F6",
                         "manipulators": [
                             {
                                 "from": {
@@ -778,7 +822,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a 'Mail'"
+                                        "shell_command": "open -a 'Calendar'"
                                     }
                                 ],
                                 "type": "basic"
@@ -830,7 +874,7 @@
                         ]
                     },
                     {
-                        "description": "Open System Preferences with Cmd+Shift+F9",
+                        "description": "Open Activity Monitor with Cmd+Shift+F9",
                         "manipulators": [
                             {
                                 "from": {
@@ -844,7 +888,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a 'System Preferences'"
+                                        "shell_command": "open -a 'Activity Monitor'"
                                     }
                                 ],
                                 "type": "basic"
@@ -852,7 +896,7 @@
                         ]
                     },
                     {
-                        "description": "Open Activity Monitor with Cmd+Shift+F10",
+                        "description": "Open System Preferences with Cmd+Shift+F10",
                         "manipulators": [
                             {
                                 "from": {
@@ -866,7 +910,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a 'Activity Monitor'"
+                                        "shell_command": "open -a 'System Preferences'"
                                     }
                                 ],
                                 "type": "basic"
