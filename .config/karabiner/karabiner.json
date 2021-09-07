@@ -983,6 +983,29 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Open Wireshark with Cmd+Fn+Shift+F2",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f2",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Wireshark'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
