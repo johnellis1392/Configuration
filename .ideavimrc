@@ -15,9 +15,12 @@ nnoremap <silent> <c-j> <c-w>j
 nnoremap <silent> <c-k> <c-w>k
 nnoremap <silent> <c-l> <c-w>l
 
+nnoremap <silent> <c-e> 7<c-e>
+nnoremap <silent> <c-y> 7<c-y>
+
 " Faster motion keys (without moving window)
-nnoremap <silent> <c-n> 10j
-nnoremap <silent> <c-p> 10k
+" nnoremap <silent> <c-n> 10j
+" nnoremap <silent> <c-p> 10k
 
 set scroll=15
 " }}}

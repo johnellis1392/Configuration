@@ -1,2 +1,6 @@
 /configstore
 /iterm2
+/exercism
+/swi-prolog
+/wireshark
+!/wireshark/.gitkeep

@@ -2,7 +2,7 @@
     "global": {
         "check_for_updates_on_startup": true,
         "show_in_menu_bar": true,
-        "show_profile_name_in_menu_bar": false
+        "show_profile_name_in_menu_bar": true
     },
     "profiles": [
         {
@@ -37,8 +37,52 @@
                         ]
                     },
                     {
-                      "description": "Change alt-[jk] in Discord",
-                      "manipulators": [
+                        "description": "TEST: Cmd+Fn+F2 skips back",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f2",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn",
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "consumer_key_code": "scan_previous_track"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "TEST: Cmd+Fn+F3 skips forward",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f3",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn",
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "consumer_key_code": "scan_next_track"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Change alt-[jk] in Discord",
+                        "manipulators": [
                             {
                                 "conditions": [
                                     {
@@ -55,13 +99,15 @@
                                             "left_alt"
                                         ],
                                         "optional": [
-                                          "left_shift"
+                                            "left_shift"
                                         ]
                                     }
                                 },
                                 "to": {
                                     "key_code": "down_arrow",
-                                    "modifiers": ["left_alt"]
+                                    "modifiers": [
+                                        "left_alt"
+                                    ]
                                 },
                                 "type": "basic"
                             },
@@ -81,17 +127,19 @@
                                             "left_alt"
                                         ],
                                         "optional": [
-                                          "left_shift"
+                                            "left_shift"
                                         ]
                                     }
                                 },
                                 "to": {
                                     "key_code": "up_arrow",
-                                    "modifiers": ["left_alt"]
+                                    "modifiers": [
+                                        "left_alt"
+                                    ]
                                 },
                                 "type": "basic"
                             }
-                      ]
+                        ]
                     },
                     {
                         "description": "Change ctrl-[jknp] in Discord",
@@ -199,6 +247,33 @@
                         ]
                     },
                     {
+                        "description": "Change Ctrl+H to backspace in Slack",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.tinyspeck\\.slackmacgap$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "delete_or_backspace"
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Alt-[jk] in Slack",
                         "manipulators": [
                             {
@@ -220,7 +295,9 @@
                                 },
                                 "to": {
                                     "key_code": "down_arrow",
-                                    "modifiers": ["left_alt"]
+                                    "modifiers": [
+                                        "left_alt"
+                                    ]
                                 },
                                 "type": "basic"
                             },
@@ -243,7 +320,9 @@
                                 },
                                 "to": {
                                     "key_code": "up_arrow",
-                                    "modifiers": ["left_alt"]
+                                    "modifiers": [
+                                        "left_alt"
+                                    ]
                                 },
                                 "type": "basic"
                             }
@@ -530,11 +609,11 @@
                         ]
                     },
                     {
-                        "description": "Open Postman with Cmd+F4",
+                        "description": "Open Postman with Cmd+F5",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "f4",
+                                    "key_code": "f5",
                                     "modifiers": {
                                         "mandatory": [
                                             "command"
@@ -551,11 +630,11 @@
                         ]
                     },
                     {
-                        "description": "Open Postico with Cmd+F5",
+                        "description": "Open Postico with Cmd+F4",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "f5",
+                                    "key_code": "f4",
                                     "modifiers": {
                                         "mandatory": [
                                             "command"
@@ -985,11 +1064,34 @@
                         ]
                     },
                     {
-                        "description": "Open Wireshark with Cmd+Fn+Shift+F2",
+                        "description": "Open Atom with Cmd+Fn+Shift+F2",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "f2",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Atom'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Open Wireshark with Cmd+Fn+Shift+F3",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f3",
                                     "modifiers": {
                                         "mandatory": [
                                             "command",
@@ -1006,6 +1108,74 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                      "description": "Open Jira with Cmd+Fn+Shift+F4",
+                      "manipulators": [
+                        {
+                          "from": {
+                            "key_code": "f4",
+                            "modifiers": {
+                              "mandatory": [
+                                "command",
+                                "shift",
+                                "fn"
+                              ]
+                            }
+                          },
+                          "to": [
+                            {
+                              "shell_command": "open -a 'Jira'"
+                            }
+                          ],
+                          "type": "basic"
+                        }
+                      ]
+                    },
+                    {
+                      "description": "Open Trello with Cmd+Fn+Shift+F5",
+                      "manipulators": [
+                        {
+                          "from": {
+                            "key_code": "f5",
+                            "modifiers": {
+                              "mandatory": [
+                                "command",
+                                "shift",
+                                "fn"
+                              ]
+                            }
+                          },
+                          "to": [
+                            {
+                              "shell_command": "open -a 'Trello'"
+                            }
+                          ],
+                          "type": "basic"
+                        }
+                      ]
+                    },
+                    {
+                      "description": "Open Apple Podcasts with Cmd+Alt+F10",
+                      "manipulators": [
+                        {
+                          "from": {
+                            "key_code": "f10",
+                            "modifiers": {
+                              "mandatory": [
+                                "left_command",
+                                "left_alt"
+                              ]
+                            }
+                          },
+                          "to": [
+                            {
+                              "shell_command": "open -a 'Podcasts'"
+                            }
+                          ],
+                          "type": "basic"
+                        }
+                      ]
                     }
                 ]
             },
@@ -1034,6 +1204,19 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": false,
+                    "simple_modifications": []
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 4116,
+                        "vendor_id": 6418
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
                     "simple_modifications": []
                 }
             ],
@@ -1277,6 +1460,250 @@
                     "to": [
                         {
                             "key_code": "scroll_lock"
+                        }
+                    ]
+                }
+            ],
+            "virtual_hid_keyboard": {
+                "country_code": 0,
+                "indicate_sticky_modifier_keys_state": true,
+                "mouse_key_xy_scale": 100
+            }
+        },
+        {
+            "complex_modifications": {
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 50,
+                    "basic.to_delayed_action_delay_milliseconds": 500,
+                    "basic.to_if_alone_timeout_milliseconds": 1000,
+                    "basic.to_if_held_down_threshold_milliseconds": 500,
+                    "mouse_motion_to_scroll.speed": 100
+                },
+                "rules": [
+                    {
+                        "description": "Open Chrome with Cmd+F1",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f1",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "sticky left_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Google Chrome'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "devices": [
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 4116,
+                        "vendor_id": 6418
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "caps_lock"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_control"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "fn_function_keys": [
+                {
+                    "from": {
+                        "key_code": "f1"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "display_brightness_decrement"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f2"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "display_brightness_increment"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f3"
+                    },
+                    "to": [
+                        {
+                            "apple_vendor_keyboard_key_code": "mission_control"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f4"
+                    },
+                    "to": [
+                        {
+                            "apple_vendor_keyboard_key_code": "spotlight"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f5"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "dictation"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f6"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f6"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f7"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "rewind"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f8"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "play_or_pause"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f9"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "fast_forward"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f10"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "mute"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f11"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "volume_decrement"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f12"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "volume_increment"
+                        }
+                    ]
+                }
+            ],
+            "name": "Remote Keyboard Profile",
+            "parameters": {
+                "delay_milliseconds_before_open_device": 1000
+            },
+            "selected": false,
+            "simple_modifications": [
+                {
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_control"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "left_command"
+                    },
+                    "to": [
+                        {
+                            "sticky_modifier": {
+                                "left_command": "toggle"
+                            }
+                        },
+                        {
+                            "key_code": "left_command"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "left_shift"
+                    },
+                    "to": [
+                        {
+                            "sticky_modifier": {
+                                "left_shift": "toggle"
+                            }
+                        },
+                        {
+                            "key_code": "left_shift"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "right_control"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command"
                         }
                     ]
                 }
