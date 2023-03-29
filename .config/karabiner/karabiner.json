@@ -38,6 +38,50 @@
                         ]
                     },
                     {
+                        "description": "TEST: Cmd+Fn+F2 skips back",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f2",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn",
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "consumer_key_code": "scan_previous_track"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "TEST: Cmd+Fn+F3 skips forward",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f3",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn",
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "consumer_key_code": "scan_next_track"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Change alt-[jk] in Discord",
                         "manipulators": [
                             {
@@ -198,6 +242,33 @@
                                 },
                                 "to": {
                                     "key_code": "down_arrow"
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Change Ctrl+H to backspace in Slack",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.tinyspeck\\.slackmacgap$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "delete_or_backspace"
                                 },
                                 "type": "basic"
                             }
@@ -539,11 +610,11 @@
                         ]
                     },
                     {
-                        "description": "Open Postman with Cmd+F4",
+                        "description": "Open Postman with Cmd+F5",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "f4",
+                                    "key_code": "f5",
                                     "modifiers": {
                                         "mandatory": [
                                             "command"
@@ -560,11 +631,11 @@
                         ]
                     },
                     {
-                        "description": "Open Postico with Cmd+F5",
+                        "description": "Open Postico with Cmd+F4",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "f5",
+                                    "key_code": "f4",
                                     "modifiers": {
                                         "mandatory": [
                                             "command"
@@ -1015,11 +1086,34 @@
                         ]
                     },
                     {
-                        "description": "Open Wireshark with Cmd+Fn+Shift+F2",
+                        "description": "Open Atom with Cmd+Fn+Shift+F2",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "f2",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Atom'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Open Wireshark with Cmd+Fn+Shift+F3",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f3",
                                     "modifiers": {
                                         "mandatory": [
                                             "command",
@@ -1038,7 +1132,7 @@
                         ]
                     },
                     {
-                        "description": "Skip Forward with Cmd+Fn+F1",
+                        "description": "Mute with Cmd+Fn+F1",
                         "manipulators": [
                             {
                                 "from": {
@@ -1060,7 +1154,7 @@
                         ]
                     },
                     {
-                        "description": "Skip Forward with Cmd+Fn+F2",
+                        "description": "Skip Backward with Cmd+Fn+F2",
                         "manipulators": [
                             {
                                 "from": {
@@ -1102,6 +1196,72 @@
                                 "type": "basic"
                             }
                         ]
+                      "description": "Open Jira with Cmd+Fn+Shift+F4",
+                      "manipulators": [
+                        {
+                          "from": {
+                            "key_code": "f4",
+                            "modifiers": {
+                              "mandatory": [
+                                "command",
+                                "shift",
+                                "fn"
+                              ]
+                            }
+                          },
+                          "to": [
+                            {
+                              "shell_command": "open -a 'Jira'"
+                            }
+                          ],
+                          "type": "basic"
+                        }
+                      ]
+                    },
+                    {
+                      "description": "Open Trello with Cmd+Fn+Shift+F5",
+                      "manipulators": [
+                        {
+                          "from": {
+                            "key_code": "f5",
+                            "modifiers": {
+                              "mandatory": [
+                                "command",
+                                "shift",
+                                "fn"
+                              ]
+                            }
+                          },
+                          "to": [
+                            {
+                              "shell_command": "open -a 'Trello'"
+                            }
+                          ],
+                          "type": "basic"
+                        }
+                      ]
+                    },
+                    {
+                      "description": "Open Apple Podcasts with Cmd+Alt+F10",
+                      "manipulators": [
+                        {
+                          "from": {
+                            "key_code": "f10",
+                            "modifiers": {
+                              "mandatory": [
+                                "left_command",
+                                "left_alt"
+                              ]
+                            }
+                          },
+                          "to": [
+                            {
+                              "shell_command": "open -a 'Podcasts'"
+                            }
+                          ],
+                          "type": "basic"
+                        }
+                      ]
                     }
                 ]
             },
@@ -1436,9 +1596,56 @@
                     "basic.to_if_held_down_threshold_milliseconds": 500,
                     "mouse_motion_to_scroll.speed": 100
                 },
-                "rules": []
+                "rules": [
+                    {
+                        "description": "Open Chrome with Cmd+F1",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f1",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "sticky left_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Google Chrome'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
             },
-            "devices": [],
+            "devices": [
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 4116,
+                        "vendor_id": 6418
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "caps_lock"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_control"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
             "fn_function_keys": [
                 {
                     "from": {

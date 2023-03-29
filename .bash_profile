@@ -1,6 +1,9 @@
 #!/bin/bash
 source ~/.bashrc
 eval "$(direnv hook zsh)"
+. "$HOME/.cargo/env"
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.cabal/bin
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -16,4 +19,3 @@ eval "$(direnv hook zsh)"
 # fi
 # unset __conda_setup
 # <<< conda initialize <<<
-
