@@ -1,5 +1,6 @@
 #!/bin/bash
 source ~/.bashrc
+eval "$(direnv hook zsh)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

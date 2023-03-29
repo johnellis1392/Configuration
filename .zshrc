@@ -11,6 +11,8 @@ if [[ -e $HOME/.profile ]]; then
   source $HOME/.profile
 fi
 
+# eval "$(direnv hook zsh)"
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 # __conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"

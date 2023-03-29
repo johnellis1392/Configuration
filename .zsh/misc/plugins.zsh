@@ -13,7 +13,7 @@ plugins=(
   docker-compose
   git
   golang
-  osx
+  macos
   tmux
 )
 
@@ -31,7 +31,7 @@ plugins=(
 # * node
 # * npm
 # * nvm
-# * osx (includes Spotify command)
+# * macos (includes Spotify command)
 # * postgres
 # * pylint
 # * python
