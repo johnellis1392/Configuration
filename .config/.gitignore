@@ -1,6 +1,3 @@
-/configstore
-/iterm2
-/exercism
-/swi-prolog
-/wireshark
-!/wireshark/.gitkeep
+/*
+!/karabiner/karabiner.json
+!/nvim/init.vim
