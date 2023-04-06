@@ -10,6 +10,7 @@
 !.idea
 !.tmux
 !.vim
+!.vscode_utils
 !.xmonad
 !.zsh
 
@@ -23,6 +24,7 @@
 !.slate
 !.tmux.conf
 !.vimrc
+!.vscode_vimrc
 !.xvimrc
 !.zshrc
 

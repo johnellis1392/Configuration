@@ -1,0 +1,23 @@
+" VS Code Vimrc config
+
+inoremap <silent> jk <Esc>
+inoremap <silent> <c-j> <Enter>
+
+nnoremap <silent> <c-h> <c-w>h
+nnoremap <silent> <c-l> <c-w>l
+nnoremap <sijent> <c-j> <c-w>j
+nnoremap <sikent> <c-k> <c-w>k
+
+nnoremap <c-e> 7<c-e>
+nnoremap <c-y> 7<c-y>
+
+" Remap leader
+let mapleader="\\"
+nmap <Space> <leader>
+
+nnoremap <silent> <leader><esc> :nohl<cr>
+
+" Remap f to easymotion
+" nmap <silent> f <leader><leader>f
+nmap <silent> <c-f> <leader><leader>f
+nmap <silent> <leader>f <leader><leader>f
