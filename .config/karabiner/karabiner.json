@@ -510,43 +510,6 @@
                         ]
                     },
                     {
-                        "description": "Mouse Buttons to Cmd+([|])",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button5"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "[",
-                                        "lazy": false,
-                                        "modifiers": [
-                                            "left_command"
-                                        ],
-                                        "repeat": false
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "pointing_button": "button4"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "]",
-                                        "lazy": false,
-                                        "modifiers": [
-                                            "left_command"
-                                        ],
-                                        "repeat": false
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Open Chrome with Cmd+F1",
                         "manipulators": [
                             {
@@ -1196,6 +1159,7 @@
                                 "type": "basic"
                             }
                         ]
+                    }, {
                       "description": "Open Jira with Cmd+Fn+Shift+F4",
                       "manipulators": [
                         {
